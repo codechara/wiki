@@ -19,6 +19,7 @@ This is a work-in-progress. During the installation process all data on your dev
 - [Installing packages](tips-and-tricks/installing-packages.md)
 - [Using toolbox](tips-and-tricks/toolbox.md)
 - [Firefox mobile config packaged as flatpak](tips-and-tricks/flatpaks.md)
+- [Using fex-emu to run x86 apps on arm devices](tips-and-tricks/fex-emu.md)
 
 ### Related projects
 
