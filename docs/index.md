@@ -31,11 +31,13 @@ This is a work-in-progress. During the installation process all data on your dev
 
 ### Chats
 
-You can find our main chat in Telegram: [t.me/fedoramobility](https://t.me/fedoramobility)
+Main chats:
+
+- [t.me/fedoramobility](https://t.me/fedoramobility) - Pocketblue dev chat (Telegram)
+- [matrix.to/#/#mobility:fedoraproject.org](https://matrix.to/#/#mobility:fedoraproject.org) - Fedora Mobility general chat (Matrix)
 
 Other related chats:
 
-- [matrix.to/#/#mobility:fedoraproject.org](https://matrix.to/#/#mobility:fedoraproject.org) - Fedora Mobility general chat
 - [matrix.to/#/#mobility-sdm845:fedoraproject.org](https://matrix.to/#/#mobility-sdm845:fedoraproject.org) - Fedora Mobility chat for sdm845 devices
 - [t.me/nabulinux](https://t.me/nabulinux) - Xiaomi Pad 5 Linux chat
 - [t.me/nabulinuxru](https://t.me/nabulinuxru) - Xiaomi Pad 5 Linux chat (ru)
