@@ -1,19 +1,14 @@
 # Using fex-emu to run x86 apps on arm devices
 
-### Installation
+## Installation
 
 ```shell
 rpm-ostree install fex-emu
 ```
 
-### Disable qemu and enable fex
+## Configuration
 
-```shell
-echo 0 | sudo tee /proc/sys/fs/binfmt_misc/qemu*
-echo 1 | sudo tee /proc/sys/fs/binfmt_misc/FEX*
-```
-
-### Write config
+Create a config file:
 
 ```shell
 mkdir -p ~/.config/.fex-emu
@@ -24,20 +19,27 @@ echo '{
 }' | tee ~/.config/.fex-emu/Config.json
 ```
 
-### Test fex
+Disable qemu and enable fex:
+
+```shell
+echo 0 | sudo tee /proc/sys/fs/binfmt_misc/qemu*
+echo 1 | sudo tee /proc/sys/fs/binfmt_misc/FEX*
+```
+
+Test fex:
 
 ```shell
 FEXInterpreter /usr/bin/uname -a
 FEXBash -c 'uname -a'
 ```
 
-### Running steam
+## Running Steam
 
 ```shell
-mkdir -p ~/files/steam
-cd ~/files/steam
+mkdir -p ~/.local/share/steam
+cd ~/.local/share/steam
 curl -LO https://rpmfind.net/linux/rpmfusion/nonfree/fedora/releases/43/Everything/x86_64/os/Packages/s/steam-1.0.0.85-1.fc43.i686.rpm
 rpm2cpio steam*.rpm | cpio -idmv
 
-FEXInterpreter ~/files/steam/usr/lib/steam/bin_steam.sh
+FEXInterpreter ~/.local/share/steam/usr/lib/steam/bin_steam.sh
 ```
