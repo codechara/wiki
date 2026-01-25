@@ -36,8 +36,8 @@ homectl passwd <username>
 At first the user will not be listed in your display manager and you have to enter the username manually.
 To do this in GDM, click "Not listed?" when choosing a user.
 
-Phrog does not allow entering the username manually, however you can rebase to a Gnome image and log in to your
-new user with GDM, then rebase back to the phosh image. Phrog will then pick the new user up and allow you to log in.
+If you're using a Phosh image, Phrog will not allow entering the username manually. Instead you can rebase to a Gnome image and log in to your
+new user with GDM, then rebase back to the Phosh image. Phrog will then pick the new user up and allow you to log in.
 
 !!! note
     For whatever reason, when logging into a systemd-homed user you have to **enter your password twice**.
