@@ -60,6 +60,11 @@ Boot into twrp again:
 fastboot boot twrp.img
 ```
 
+Activate sideload and flash the aloha installer zip:
+```
+adb sideload installer_bootmanager_NOSB.zip
+```
+
 Copy `ESP` from efi-files, and delete old `/esp/EFI/fedora`:
 ```
 adb push efi-files/EFI /esp
